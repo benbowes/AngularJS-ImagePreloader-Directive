@@ -1,4 +1,4 @@
-var app = angular.module('plunker', [])
+var app = angular.module('ImagePreloader', [])
 
   .directive('preloadimg', function() {
     return {
