@@ -1,0 +1,20 @@
+/* Put your css in here */
+
+.preload-img {
+  transition: opacity 0.4s ease;
+  opacity: 1;
+  max-width: 180px;
+  height: auto;
+  vertical-align: top;
+}
+
+.preload-img--preloading {
+  opacity: 0;
+  transition: opacity 0s ease;
+}
+
+.preload-img__wrap {
+  background: cornflowerblue;
+  display: inline-block;
+  float: left;
+}

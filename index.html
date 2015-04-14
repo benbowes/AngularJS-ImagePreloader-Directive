@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="ImagePreloader">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS ImagePreloader Directive</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.angularjs.org/1.4.0-rc.0/angular.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-init="images = [ {url: 'http://lorempixel.com/600/600/'},
+                    {url: 'http://lorempixel.com/500/500/'},
+                    {url: 'http://lorempixel.com/400/400/'},
+                    {url: 'http://lorempixel.com/300/300/'},
+                    {url: 'http://lorempixel.com/200/200/'},
+                    {url: 'http://lorempixel.com/700/700/'},
+                    {url: 'http://lorempixel.com/800/800/'} ]">
+    
+    <div ng-repeat="image in images">
+      <img ng-src="{{image.url}}" preloadimg>
+    </div>
+  
+  </body>
+
+</html>
